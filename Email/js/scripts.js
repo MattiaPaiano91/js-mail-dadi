@@ -35,19 +35,21 @@ let control = false;
     for (let i = 0; i < emailList.length; i++) {
         if (email == emailList[i]) {
             control = true;
-            i = emailList.length
+            break
         }
         
          console.log("username inserito", email, "controllo array", email[i]);
-        }
+    }
    
     if(control == true){
         alert('puoi entrare');
+        control = false
     }
     else{
         alert("non può entrareh");
     }
      
+    
  }
  );
         
